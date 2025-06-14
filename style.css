@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #DFD0B8;
+  color: #4A102A ;
+  scroll-behavior: smooth;
+}
+
+nav {
+  text-align: center;
+  padding: 12px;
+  background: #222831;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://www.shutterstock.com/image-photo/pictures-natural-fresh-fruit-juice-260nw-2335482853.jpg')
+    no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 30px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+
+}
+
+.about, .products, .contact {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about h2, .products h2, .contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.product {
+  flex: 1 1 250px;
+  background: #EFEEEA;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: #273F4F;
+}
+
+.product img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+input, textarea, button {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 60px 10px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
